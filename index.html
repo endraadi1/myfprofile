@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="dist/output.css" rel="stylesheet" />
+    <title>My Profile</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header
+      class="navbar-fixed left-0 top-0 z-10 flex w-full items-center bg-transparent"
+    >
+      <div class="container">
+        <div
+          class="relative flex items-center justify-between bg-white opacity-70"
+        >
+          <div class="px-12">
+            <a href="#beranda" class="block py-6 font-bold text-teal-500"
+              >endraadi</a
+            >
+          </div>
+          <div class="flex items-center p-4">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="absolute right-4 block lg:hidden"
+            >
+              <span class="hamburger-line origin-top-left"></span>
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line origin-bottom-left"></span>
+            </button>
+
+            <nav
+              id="nav-menu"
+              class="absolute right-2 top-full hidden w-full max-w-[250px] rounded-lg bg-white shadow-lg lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#beranda"
+                    class="mx-8 flex py-2 group-hover:text-teal-500"
+                    >Beranda</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#tentangsaya"
+                    class="mx-8 flex py-2 group-hover:text-teal-500"
+                    >Tentang Saya</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#portfolio"
+                    class="mx-8 flex py-2 group-hover:text-teal-500"
+                    >Portfolio</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!--hero section-->
+    <div class="container">
+      <div
+        id="beranda"
+        class="mt-36 flex h-full w-full flex-col items-center px-12 md:flex-row"
+      >
+        <div class="capitalize md:w-1/2">
+          <h1 class="font-semibold text-teal-500">
+            Halo semua 👋, saya
+            <span class="block text-4xl font-bold text-slate-900"
+              >Endra Adi</span
+            >
+          </h1>
+          <h2 class="mt-3 text-xl text-slate-700">| Junior Web Developer |</h2>
+          <p class="-leading-3 mt-3 text-justify text-sm font-medium">
+            saya merupakan seorang lulusan dari ITB Stikom Bali dengan jurusan
+            sistem informasi. dengan kemampuan basic dalam bidang web developer
+          </p>
+          <button
+            class="mt-3 rounded-full bg-teal-500 px-5 py-3 font-semibold text-white duration-300 ease-in-out hover:opacity-80"
+          >
+            <a href="#hubungisaya">Hubungi Saya</a>
+          </button>
+        </div>
+        <div
+          class="relative mr-0 mt-3 flex flex-col items-center md:mt-0 md:w-1/2"
+        >
+          <img
+            src="img/endra.png"
+            alt="Foto Profil"
+            width="300"
+            class="bg-cover"
+          />
+          <span class="absolute -bottom-40 -z-10">
+            <svg
+              widht="500"
+              height="500"
+              viewBox="0 0 200 200"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="#14b8a6"
+                d="M53.9,-24.1C56.9,-8.3,37.4,8.2,20.7,17.8C4,27.4,-10,30.2,-22.4,23C-34.7,15.8,-45.6,-1.2,-41.6,-18.4C-37.6,-35.5,-18.8,-52.8,3.3,-53.8C25.5,-54.9,50.9,-39.9,53.9,-24.1Z"
+                transform="translate(100 100) scale(1,1)"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+    </div>
+    <!--end hero section-->
+
+    <!--personal information-->
+    <div class="container px-12">
+      <div
+        id="tentangsaya"
+        class="my-4 rounded-lg bg-slate-50 px-5 py-6 text-center"
+      >
+        <h1 class="text-2xl font-semibold">~ Tentang Saya ~</h1>
+        <div class="mt-3 flex flex-col gap-5 text-justify md:flex-row">
+          <p>
+            Saya merupakan lulusan tahun 2022 dari ITB Stikom Bali dengan
+            jurusan Sistem Informasi. Memiliki ketertarikan dalam dunia
+            programming khususnya web programming. Pada saat pembuatan skripsi
+            atau tugas akhir saya pun menggunakan web programming sebagai topik
+            tugas akhir.
+          </p>
+          <p>
+            Pada saat ini saya sedang intens untuk mempelajari front-end, dengan
+            teknologi yang digunakan yaitu Vue Js dan Tailwind Css. Sampai saat
+            ini saya sudah membuat 2 template website yang akan digunakan pada
+            usaha masyarakat khususnya usaha playground dan restaurant atau
+            cafe.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--end personal information-->
+
+    <!-- portfolio -->
+    <div class="container">
+      <div id="portfolio" class="items-center gap-8 text-center">
+        <h1 class="text-2xl font-bold">Portfolio</h1>
+        <div class="flex flex-col gap-5 px-12 md:flex-row">
+          <div class="rounded-lg p-4 shadow-lg">
+            <img src="img/playground.png" />
+            <p class="mt-3 text-justify">
+              Project ini merupakan project pertama saya di ABC Games. website
+              ini dibuat sebagai template untuk usaha playground, karna usaha
+              playground di Denpasar sekitarnya mulai berjamuran dan belum
+              memiliki website sebagai media penyampaian informasi.
+            </p>
+          </div>
+          <div class="rounded-lg p-4 shadow-lg">
+            <img src="img/restaurant.png" />
+            <p class="mt-3 text-justify">
+              Project ini merupakan project kedua saya di ABC Games. website ini
+              dibuat sebagai template untuk usaha restaurant, karna usaha
+              restaurant di Denpasar sekitarnya mulai berjamuran dan belum
+              memiliki website sebagai media penyampaian informasi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end portfolio -->
+
+    <!-- contact us -->
+    <div class="flex w-1/4 flex-col">
+      <div id="hubungisaya" class="mt-4 px-12 py-6">
+        <div class="flex text-center text-xl font-semibold">Contact Me</div>
+        <div class="mt-3 text-start">
+          <div>
+            <h1><i class="fa-regular fa-envelope"></i> Email :</h1>
+            <p>endraadi269@gmail.com</p>
+          </div>
+          <div class="mt-4">
+            <h1><i class="fa-solid fa-phone"></i> Telephone :</h1>
+            <p>+62 831-1754-2961</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2">
+          <a href="https://instagram.com/endraadi_?igshid=ZDc4ODBmNjlmNQ=="
+            ><i class="fa-brands fa-instagram fa-lg"></i
+          ></a>
+          <a href="https://www.facebook.com/endra.adi.16?mibextid=ZbWKwL"
+            ><i class="fa-brands fa-facebook fa-lg"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!-- end contact us -->
+    <script
+      src="https://kit.fontawesome.com/dc073e6d7c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="dist/js/script.js"></script>
+  </body>
+</html>
